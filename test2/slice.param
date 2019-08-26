@@ -1,0 +1,14 @@
+# parameter file for slice sampler inversion routine
+# see README for explanation
+100        #number of walks
+1000     #steps per walk
+100      #steps to burn before storing models, -1 for nburn=nsteps
+200       #number of bins for calculating integrals
+-1        #ISEED for RAND(), -1 for time()
+2         #expected distribution width (initial step size)
+0         #whether to write out models (1/0) (big file)
+2         #number of parameters in model
+#min max name - for each parameter
+0 5  intercept
+0 5  slope
+#-5 5  "not used"

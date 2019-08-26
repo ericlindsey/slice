@@ -1,0 +1,10 @@
+# GMT 5 Session common arguments shelf
+BEGIN GMT 5.1.2
+B	a1.25f0.25:intercept:/a1.25f0.25:slope:WSen:.test1/marg2d.2.1.grd:
+J	X
+JX	X6i/6i
+R	0.0125/4.9875/0.0125/4.9875
+X	3
+Y	3
+L	1
+END
