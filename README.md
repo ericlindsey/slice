@@ -16,10 +16,13 @@ ill-behaved pdfs, such as those with widely separated misfit minima, individual
 random walks may become trapped in a single minimum, but this problem is easily
 overcome by combining the results of a large number of independent walks.
 
-This program is an implementation of the algorithm described in R. Neal, "Slice
-Sampling", Ann. Stat. (2003), v. 31, pp. 705-767. The program returns the 1-D
-and 2-D marginal distribution of samples along each dimension, plus their means,
-standard deviations and the correlation matrix.
+This program is an implementation of the Slice sampling algorithm first described by R. Neal in 2003, and was written for part of my PhD thesis. Citations should include both of these references:
+
+R. Neal, "Slice Sampling", Ann. Stat. (2003), v. 31, pp. 705-767, https://www.jstor.org/stable/3448413.
+
+Lindsey, E. O. and Y. Fialko, Geodetic Slip Rates in the Southern San Andreas Fault System: Effects of Elastic Heterogeneity and Fault Geometry (2013), J. Geophys. Res. Solid Earth, v. 118, pp. 689–697, doi:10.1029/2012JB009358.
+
+The program accepts any user-defined misfit function (written as a subroutine in Fortran) and returns the 1-D and 2-D marginal distribution of samples along each dimension, plus their means, standard deviations and the correlation matrix.
 
 Parallelization in MPI makes use of the statistical independence of separate
 Markov Chains. To parallelize efficently, use more walks than the number of
