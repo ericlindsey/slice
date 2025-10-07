@@ -1,6 +1,7 @@
 SLICE: Efficient N-Dimensional Monte Carlo Inversion Algorithm
 -----
 
+
 Eric Lindsey
 Written: Oct 2010
 Revised: June 2013
