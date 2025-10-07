@@ -11,4 +11,4 @@
 #min max name - for each parameter
 0 5  intercept
 0 5  slope
-#-5 5   "not used"
+#-5 5  comments (lines starting with #) are ignored
