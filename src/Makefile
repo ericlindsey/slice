@@ -6,7 +6,10 @@ USER_OBJ =
 SLICE_OBJ = $(USER_OBJ) array_io.o param_mod.o calc_mod.o fwd_mod.o rand_mod.o slice_mod.o
 GRID_OBJ = $(USER_OBJ) array_io.o param_mod.o calc_mod.o fwd_mod.o grid_mod.o
 
-all: slice grid
+all: bin slice grid
+
+bin:
+	\mkdir -p ../bin
 
 slice: slice.f90 $(SLICE_OBJ)
 	$(F90) $(FFLAGS) -o slice $(SLICE_OBJ) slice.f90
