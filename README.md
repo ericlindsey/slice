@@ -3,7 +3,9 @@ SLICE: Efficient N-Dimensional Monte Carlo Inversion Algorithm
 
 
 Eric Lindsey
+
 Written: Oct 2010
+
 Revised: June 2013
 
 The slice sampler is a Monte Carlo algorithm used to generate samples in an
@@ -17,7 +19,9 @@ ill-behaved pdfs, such as those with widely separated misfit minima, individual
 random walks may become trapped in a single minimum, but this problem is easily
 overcome by combining the results of a large number of independent walks.
 
-This program is an implementation of the Slice sampling algorithm first described by R. Neal in 2003, and was written for part of my PhD thesis. Citations should include both of these references:
+This program is an implementation of the Slice sampling algorithm first described by R. Neal in 2003, and was written for part of my PhD thesis. You may cite the repository as: [![DOI](https://zenodo.org/badge/204434092.svg)](https://doi.org/10.5281/zenodo.17394036)
+
+Citations should also include both of these references:
 
 R. Neal, "Slice Sampling", Ann. Stat. (2003), v. 31, pp. 705-767, https://www.jstor.org/stable/3448413.
 
