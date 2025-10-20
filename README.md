@@ -31,6 +31,8 @@ processors. MPI overhead can become significant for a large number of walks or
 a large number of dimensions, in which case the arrays become large. Testing on
 a simple pdf is advised before running the code with your full forward model.
 
+Update [2025]: Twelve years later, slice sampling is now a standard part of MATLAB (https://www.mathworks.com/help/stats/slicesample.html) and there are numerous well-supported Python implementations, for example https://pypi.org/project/slicesampling/ or even https://www.tensorflow.org/probability/api_docs/python/tfp/mcmc/SliceSampler. Additionally, there are some more advanced sampling methods based on slice sampling that address some of the limitations related to sample independence in highly correlated dimensions; one example is Zeus (https://doi.org/10.1093/mnras/stab2867). Thus, before using my somewhat aging Fortran implementation of this method, I encourage aspiring researchers to look around at what else might be available. That said, the code here is still correct, relatively concise, and blazing fast. Happy sampling!
+
 Installation
 -----
 Compile the program as follows: 
